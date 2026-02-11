@@ -212,4 +212,5 @@ FROM Inventory i
 JOIN Product p ON i.ProductID = p.ProductID
 JOIN Warehouse w ON i.WarehouseID = w.WarehouseID
 GROUP BY p.Category, w.ReturnPolicy
+
 ORDER BY p.Category;
